@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Componente reutilizable de tablas desarrollado con JavaScript puro." />
+    <title>Vanilla DataTable</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <!-- =============== ENCABEZADO =============== -->
+    <header class="site-header">
+        <div class="brand">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <div>
+                <p class="brand-name">VANILLA DATATABLE</p>
+                <p class="brand-subtitle">Componente web reutilizable</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- =============== CONTENIDO PRINCIPAL =============== -->
+    <main class="container">
+        <!-- Presentación -->
+        <section class="hero" aria-labelledby="page-title">
+            <div class="hero-accent" aria-hidden="true"></div>
+            <p class="eyebrow">JAVASCRIPT PURO · HTML5 · CSS3</p>
+            <h1 id="page-title">Tabla dinámica reutilizable</h1>
+            <p class="hero-description">
+                Componente ligero que recibe una configuración de columnas y un
+                conjunto de datos JSON para generar una tabla HTML dinámicamente.
+            </p>
+        </section>
+
+        <!-- =============== DEMOSTRACIÓN DEL COMPONENTE =============== -->
+        <section class="card" aria-labelledby="demo-title">
+            <div class="card-header">
+                <div>
+                    <p class="section-label">DEMO</p>
+                    <h2 id="demo-title">Datos de usuarios</h2>
+                </div>
+                <span class="status-badge"> Componente activo </span>
+            </div>
+
+            <!-- Este contenedor será utilizado por DataTable.js para generar la tabla.-->
+            <div id="data-table" class="table-wrapper" aria-live="polite"></div>
+        </section>
+
+        <!-- =============== CARACTERÍSTICAS =============== -->
+        <section class="info-grid" aria-label="Características del componente">
+            <article class="info-card">
+                <span class="info-number"> 01 </span>
+                <h3>Configuración</h3>
+                <p>
+                    Las columnas se definen mediante una configuración reutilizable.
+                </p>
+            </article>
+
+            <article class="info-card">
+                <span class="info-number"> 02 </span>
+                <h3>Datos JSON</h3>
+                <p>
+                    El componente recibe un arreglo de objetos como fuente de datos.
+                </p>
+            </article>
+
+            <article class="info-card">
+                <span class="info-number"> 03 </span>
+                <h3>Renderizado seguro</h3>
+                <p>
+                    Los valores se incorporan al DOM utilizando APIs seguras del
+                    navegador.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <!-- =============== PIE DE PÁGINA =============== -->
+    <footer class="site-footer">
+        <p>Vanilla DataTable · Proyecto académico de Frontend</p>
+    </footer>
+
+    <!-- La aplicación utiliza ES Modules app.js será el punto de entrada del frontend. -->
+    <script type="module" src="./js/app.js"></script>
+</body>
+
+</html>
